@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Project implementing images, lists, tables, forms, and multimedia.">
+    <title>HTML5 Practice Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #555;
+            color: #fff;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        audio, video {
+            display: block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>HTML5 Practical Implementation</h1>
+    </header>
+
+    <!-- ================= ORDERED LIST WITH ROMAN NUMERALS ================= -->
+    <section>
+        <h2>My Favorite Technologies</h2>
+        <ol type="I">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Cloud Computing</li>
+        </ol>
+    </section>
+
+    <!-- ================= EXTERNAL IMAGE FROM PEXELS ================= -->
+    <section>
+        <h2>Beautiful Scenery</h2>
+        <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" 
+             alt="Beautiful Mountain Scenery" 
+             width="600">
+    </section>
+
+    <!-- ================= CONTACTS TABLE ================= -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stephen Oloo</td>
+                    <td>Nairobi, Kenya</td>
+                    <td>+254712345678</td>
+                    <td>stephen@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary Atieno</td>
+                    <td>Kisumu, Kenya</td>
+                    <td>+254798123456</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>James Mwangi</td>
+                    <td>Nakuru, Kenya</td>
+                    <td>+254701234567</td>
+                    <td>james@example.com</td>
+                </tr>
+                <tr>
+                    <td>Grace Njeri</td>
+                    <td>Thika, Kenya</td>
+                    <td>+254734567890</td>
+                    <td>grace@example.com</td>
+                </tr>
+                <tr>
+                    <td>Peter Kiprotich</td>
+                    <td>Eldoret, Kenya</td>
+                    <td>+254745678901</td>
+                    <td>peter@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ================= REGISTRATION FORM WITH VALIDATION ================= -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+
+            <!-- Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter a valid email" required>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required>
+
+            <!-- Date -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Dropdown -->
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Select Country--</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Nigeria">Nigeria</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <p><strong>Gender:</strong></p>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <!-- Checkboxes -->
+            <p><strong>Interests:</strong></p>
+            <input type="checkbox" id="coding" name="interests" value="Coding">
+            <label for="coding">Coding</label><br>
+
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label><br>
+
+            <input type="checkbox" id="travel" name="interests" value="Travel">
+            <label for="travel">Travel</label><br>
+
+            <!-- Submit -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- ================= MULTIMEDIA: AUDIO AND VIDEO ================= -->
+    <section>
+        <h2>Listen to a Sample Audio</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Watch a Sample Video</h2>
+        <video width="600" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>&copy; 2025 HTML5 Project | Designed by Stephen Oloo</p>
+    </footer>
+
+</body>
+
+</html>
